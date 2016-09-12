@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>test</title>
+		<style type="text/css">
+			li {
+				width: 20px;
+				height: 20px;
+				margin: 10px 0;
+				background: #fff;
+				list-style: none;
+			}
+			
+			.active {
+				background: yellow;
+			}
+			
+			#content {
+				width: 200px;
+				height: 100px;
+				background: #ccc;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="content">
+			<ul>
+				<li class="item active">a</li>
+				<li class="item">b</li>
+				<li class="item">c</li>
+			</ul>
+			<p class="active">d</p>
+			<p class="active">e</p>
+			<input type="text" id="input1" value="" />
+		</div>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var oLi = $().$('.active','ul');
+			oLi.removeClass('active');
+			console.log(oLi.className);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>拖拽实现</title>
+		<style type="text/css">
+			#box1 {
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+			}
+			
+			#box2 {
+				width: 100px;
+				height: 100px;
+				background: yellow;
+				position: absolute;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<script src="js/$.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var box1 = $.$('#box1')[0];
+			var box2 = $.$('#box2')[0];
+			new Drag(box1);
+			new Drag(box2);
+		</script>
+	</body>
+
+</html>
